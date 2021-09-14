@@ -1,0 +1,16 @@
+/*https://codepen.io/derekjp/pen/pJzpxB*/
+
+/*https://youtu.be/zqiwUkN0_DA*/
+.scroll-line{
+  height: 5px;
+  margin-top: 0;
+  background: radial-gradient(circle,	
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  width: 0%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

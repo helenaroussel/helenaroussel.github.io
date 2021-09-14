@@ -1,0 +1,254 @@
+$primary:#97094A;
+$secondary: #d60b52;
+$white: #fff;
+$gray: #9b9b9b;
+ 
+ 
+ 
+ .contactform{
+    z-index: 1000;
+}
+ 
+
+form{
+    font-family: SegoeB;
+    color: rgb(196, 44, 183);
+    font-size: 16px;
+    
+}
+
+
+
+//formulaire (https://codepen.io/lucasyem/pen/ZEEYKdj) input gradient
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 70%;
+  left: 15%;
+
+  
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $white;
+  outline: 0;
+  font-size: 1.3rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.5rem;
+  color: $white;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $white,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+
+// /*paramètres checkbox-formulaire inscription*/
+// .form-check-input ,.form-check-label{
+//    font-size: 1.3rem;
+//    color: #ffffff;
+   
+// }
+// // .form-check{
+// //    margin: 150px;
+// // }
+
+
+
+
+// //formulaire de fiche profil
+// label{
+//   display:flex;
+//   justify-content: center;
+//   margin: 0 auto;
+//   font-size: 16px;
+// }
+
+// .radio .form-check-label{
+//   font-size: 16px;
+// }
+// .custom-select{
+//   position: relative;
+//   display: block;
+//   max-width: 400px;
+//   min-width: 180px;
+//   margin: 0 auto;
+//   margin-top: 5px;
+//   border: 1px solid #ffffff;
+//   background-color:#ffffff;
+//   opacity: 0.7;
+//   z-index: 10;
+//   color: #b2153f;
+// }
+
+
+// label{
+//    padding-right: 100px;
+   
+// }
+
+// input{
+//   margin-right: 10px;
+// }
+
+textarea{
+  opacity: .9;
+}
+
+// .formContact textarea::placeholder{
+//   color: rgb(70, 16, 133);
+//   padding: 15px;
+// }
+
+//bouton outline blanc pour background image
+button.envoi{
+    position: absolute;
+    //top: 90%;
+    //outline:#ffffff;
+    // left: 25%;
+    // transform: translatex(50%);
+    //color:#ffffff;
+    padding: 10px 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    overflow: hidden;
+    background: transparent;
+    width: 50%;
+    transform: translateX(20%);
+    border: transparent;
+}
+
+button:before{
+    content: '';
+    position: absolute;
+    top:2px;
+    left:2px;
+    bottom: 2px;
+    width: 50%;
+    //background: #e48181;
+  
+
+}
+// contours-bouton
+button span:nth-child(1) 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b2083d, #5e0722);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+button span:nth-child(2) 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #b2083d, #5e0722);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+button span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #b2083d,#5e0722);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+button span:nth-child(4) 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #b2083d, #5e0722);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+
+

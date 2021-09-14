@@ -1,0 +1,74 @@
+.sound-icon{  
+    border: none;
+    background: transparent;
+    height: 20px;
+    width: 30px;
+    display: flex;
+    position: relative;
+
+}
+
+.sound-icon is-active .stroke{
+    -webkit-animation-name: spectre;
+    animation-name: spectre;
+}
+
+.home .sound{
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/*https://youtu.be/WXjrZ93hNgc
+CSS3 - Music Waves Loading Animation | Webkit Coding*/
+
+.sound{
+    height: 20px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.sound .stroke{
+    display: block;
+    position: relative;
+    background: #b61ba1;
+    height: 100%;
+    width: 4px;
+    border-radius: 50px;
+    margin: 0 2px;
+    z-index: 1000;
+    animation: spectre 1.2s linear infinite;
+
+}
+
+@keyframes spectre{
+    50%{
+        height: 20%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.3s;
+}

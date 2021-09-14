@@ -1,0 +1,281 @@
+/*Import des polices*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap);
+
+@font-face{
+    font-family: Stingray;
+    src: url('../../fonts/Stingray.otf');
+}
+
+@font-face{
+    font-family: Tomorrow;
+    src: url('../../fonts/TOMOPRG_.TTF');
+}
+
+@font-face{
+    font-family: revilo;
+    src: url('../../fonts/revilo_san.ttf');
+}
+
+
+h1, h2, h3, h4{
+    color: #ffff;
+    text-align: center;
+    z-index: 3;
+}
+
+h1{
+    font-family: Stingray;
+    font-size: 35px;
+    animation: job ease 3s;
+}
+
+@keyframes job{
+    0%{
+        opacity: 0;
+        transform: translateY(85%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+// h2{
+    // font-family: revilo;
+    // font-size: 80px;
+    // line-height: 70px;
+// }
+
+h3{
+    // font-family: Tomorrow;
+    font-family: revilo;
+    font-size: 40px;
+    top: 20%;  
+    //line-height: 80px;
+}
+.bg-port h3 p{
+    letter-spacing: .5em;
+    //display: inline-block;
+    //justify-content: space-evenly;
+}
+
+h4{
+    font-family: revilo;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.heading .height{
+    font-size: 140px;
+}
+
+ .item{
+     font-family: Tomorrow;
+     font-size: 100px;
+    //top: 20%;
+    //align-content: initial;
+    
+}
+
+// lien pour afficher le dégradé sur le texte sous google chrome
+// https://www.skymac.org/Admin-Dev/article-6c2e2c08-Astuce-CSS-Appliquer-des-degrades-sur-les-textes.htm	
+
+.text {
+    font-family: revilo;
+    font-size: 80px;
+    line-height: 70px;
+
+	text-align: center;
+	// background: rgb(63, 94, 251);
+	background: -webkit-radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+    );
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+
+	// background-size: 200%;
+
+	// font-size: 22vw;
+	font-weight: bolder;
+
+	color: transparent;
+	background-clip: text;
+
+	animation: animation 1.7s linear infinite;
+}
+
+@keyframes animation {
+    // from{
+        // background-position: 5% left;
+    // }
+	to {
+		background-position: 200% center;
+	}
+}
+
+/* ****** section à propos ************ */
+
+.about p{
+    color: #fff;
+    text-align: justify;
+    font-family: Montserrat, sans-serif;
+    // font-weight: bold;
+    font-size: 15px;
+    z-index: 10;
+}
+
+/* ********* All sections *********/
+.text-left{
+    position: absolute;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    writing-mode: vertical-lr;
+    opacity: .4;
+
+}
+
+/* ***** section contact ******* */
+.contactBox{
+    position: absolute;
+    top: 10vh;
+}
+
+.formContact h5,
+.contactInfo h5{
+    color:#fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.contactInfo p, .icon{
+    color:#fff;
+}
+
+.contactInfo p{
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.icon{
+    align-items: center;
+}
+
+.contactInfo{
+    align-items: center;
+    margin-right: 90px;
+    
+}
+
+.contactInfo .box{
+    margin-top: 30px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.contactInfo .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.formContact{
+    min-width: 60%;
+    padding: 20px;
+}
+
+.linkPerso {
+    font-family: Montserrat, sans-serif;
+    text-transform: lowercase;
+}
+
+.text a{
+    text-decoration: none;
+}
+.field{
+    font-family: Montserrat, sans-serif;
+
+}
+
+
+/* ***** section footer copyright/specialities ******* */
+.specialities p,
+.copyright p{
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+/* ***** section specialities ******* */
+.specialities p{
+    position: absolute;
+    top: 35%;
+}
+
+/* ***** div 404 ******* */
+.bug{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    top: 35vh;
+
+}
+.bug span{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    opacity: .4;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+              10px 10px 10px rgba(0,0,0, 0.4);
+    border-radius: 50%;
+    padding: 10%; 
+    height: 200px; 
+}
+.bug a{
+    margin-top: -75px;
+    display: flex;
+    justify-content: center;
+}
+.bug p{
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+}
+.bug img{
+    //position: absolute;
+    //top: 40vh;
+    height: 55px;
+    width: auto;
+    opacity: .4;
+}
+
+/* ********media queries ************ */
+
+@media screen and (max-width: 1024px)
+ {
+
+    .hero{
+        top: 30%!important;
+    }
+    .text{
+        font-size: 55px;
+    }
+    .text-left{
+        display: none;
+    }
+    .formContact{
+        display: none;
+    }
+
+}

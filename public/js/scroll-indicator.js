@@ -1,0 +1,1 @@
+$(window).scroll(function () { var c = $(window).scrollTop(), d = $(document).height(), a = $(window).height(); var b = (c / (d - a)) * 100; $(".scroll-line").css("width", (b + "%")) });
